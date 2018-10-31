@@ -1,6 +1,39 @@
 # liri-node-app
-# LIRI is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives back data.
+### LIRI is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives back data.
 
+## Setup
+This requires a few steps before starting to run this application:
+- Clone the repository
+  - git clone https://github.com/chum46/liri-node-app
+  - cd liri-node-app
+- Install Node.js
+  - Latest version: https://nodejs.org/en/
+- Install the dependencies
+  - npm install twitter
+    - https://www.npmjs.com/package/twitter
+  - npm install --save node-spotify-api
+    - https://www.npmjs.com/package/node-spotify-api
+  - npm install request
+    - https://www.npmjs.com/package/request
+    - Used to receive information from OMDB
+  - npm install dotenv
+    - https://www.npmjs.com/package/dotenv
+    - Used to hide API Keys
+- Create a .env file
+  - #Spotify API keys
+    SPOTIFY_ID=**your-spotify-id**
+    SPOTIFY_SECRET=**your-spotify-secret**
+    #Twitter API keys
+    TWITTER_CONSUMER_KEY=**your-twitter-consumer-key**
+    TWITTER_CONSUMER_SECRET=**your-twitter-consumer-secret**
+    TWITTER_ACCESS_TOKEN_KEY=**your-access-token-key**
+    TWITTER_ACCESS_TOKEN_SECRET=**your-twitter-access-token-secret**
+  - NOTE: Insert the API keys you receive in the following step:
+- Obtain API keys
+  - https://apps.twitter.com/app/new
+  - https://developer.spotify.com/my-applications/#!/
+
+## Using the app
 liri.js can take in one of the following commands:
 
     * node liri.js my-tweets
